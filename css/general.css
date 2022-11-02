@@ -15,6 +15,7 @@ Default: 1
 Small: 1.05
 Medium: 1.2
 Paragraph default: 1.6
+Large: 1.8
 
 -LETTER SPACING
 -0.5px
@@ -67,6 +68,7 @@ html {
   /* 10px / 16px = 0.625= 62.5% */
   /* percentage of user's browser font-size setting */
   font-size: 62.5%;
+  overflow-x: hidden; /* prevent horizontal scroll */
 }
 
 body {
@@ -74,6 +76,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden; /* no horizontal scroll */
 }
 
 /* ----------------------------------------------*/
@@ -214,6 +218,7 @@ body {
   align-items: center;
   font-size: 1.8rem;
   gap: 1.6rem; /* gap between the icon and the text */
+  line-height: 1.2;
 }
 .list-icon {
   width: 3rem;
